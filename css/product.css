@@ -1,0 +1,29 @@
+.search {
+  width: 100%;
+}
+
+.search .container .search-btn {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search .container .search-btn input {
+  padding: 5px 10px;
+  font-size: 20px;
+  /* border: none; */
+  outline: none;
+}
+
+.search .container .search-btn button {
+  border: 1px solid black;
+  padding: 9px 10px;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

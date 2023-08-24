@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: candara;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+}
+
+/* navbar start */
+#navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid #ccc;
+}
+
+.nav-links ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.nav-links ul li span {
+  background: #000;
+  color: #fff;
+  padding: 0px 5px;
+  border-radius: 5px;
+}
+/* navbar end */
+
+.carousel .carousel-inner {
+  max-height: 100vh !important;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.carousel .carousel-inner .carousel-item img {
+  height: 100vh !important;
+  width: 100% !important;
+}
+
+.carousel .carousel-inner .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* about start */
+.about {
+  background: rgb(247, 245, 245);
+  padding: 50px 0;
+  margin: 50px 0;
+}
+.about .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+.about .container .about_text p,
+.about .container .about_text h2 {
+  margin-bottom: 10px;
+}
+
+.about .container .about_img img {
+  width: 250px !important;
+  height: 250px !important;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/* about end */
+
+/* cards start */
+.cards {
+  margin: 30px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.cards .card-item {
+  width: 250px;
+  /* height: 400px; */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.cards .card-item .card-img img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.cards .card-item .card-text {
+  padding: 15px;
+}
+
+.cards .card-item .card-text .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.cards .card-item .card-text .buttons button {
+  margin-top: 15px;
+  border: none;
+  outline: none;
+  padding: 5px 15px;
+}
+
+.cards .card-item .card-text .buttons .add {
+  width: 70%;
+}
+/* cards end */
+
+/* footer start */
+footer {
+  margin-top: 50px;
+  padding: 20px 0;
+}
+/* footer end */
+
+/* wishlist css start */
+/* wishlist css end*/
+
+/* cart */
+.cart-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.dltbtn {
+  border: 1px solid black;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

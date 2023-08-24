@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naqeeb's Closet</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../Images/closet.png" type="image/x-icon" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/product.css" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"
+          >Naqeeb's Closet <i class="fa-solid fa-feather-pointed"></i
+        ></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse nav-links"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="product.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="wishlist.html">Wishlist</a>
+              <span class="wishvalue">0</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html">Cart</a>
+              <span class="cartvalue">0</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- search start -->
+    <div class="search">
+      <div class="container">
+        <div class="search-btn">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Search..."
+            onkeyup="search()"
+          />
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+      </div>
+    </div>
+    <!-- search end -->
+
+    <!-- main start -->
+    <div class="main">
+      <div class="container">
+        <div class="cards product_card">
+          <div class="card-item">
+            <div class="card-img">
+              <img src="products/item1.jpeg" alt="" />
+            </div>
+            <div class="card-text">
+              <p class="fs-4">Trackpant</p>
+              <p>Rs.<b>400</b></p>
+              <div class="buttons">
+                <button class="add">Add to cart</button>
+                <button><i class="fa-solid fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="card-item">
+            <div class="card-img">
+              <img src="products/s1.jpg" alt="" />
+            </div>
+            <div class="card-text">
+              <p class="fs-4">Shirt</p>
+              <p>Rs.<b>600</b></p>
+              <div class="buttons">
+                <button class="add">Add to cart</button>
+                <button><i class="fa-solid fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="card-item">
+            <div class="card-img">
+              <img src="products/j1.webp" alt="" />
+            </div>
+            <div class="card-text">
+              <p class="fs-4">Regular Fit Jeans</p>
+              <p>Rs.<b>1200</b></p>
+              <div class="buttons">
+                <button class="add">Add to cart</button>
+                <button><i class="fa-solid fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="card-item">
+            <div class="card-img">
+              <img src="products/sh1.jpeg" alt="" />
+            </div>
+            <div class="card-text">
+              <p class="fs-4">Nike Zoomx</p>
+              <p>Rs.<b>30000</b></p>
+              <div class="buttons">
+                <button class="add">Add to cart</button>
+                <button><i class="fa-solid fa-heart"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main end -->
+
+    <!-- footer start -->
+    <footer class="text-center">
+      <p>Copyright <b> &copy; </b> Naqeeb Ansari. All Right Reserved</p>
+    </footer>
+    <!-- footer end -->
+
+    <!-- JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/product.js"></script>
+  </body>
+</html>
