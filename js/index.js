@@ -28,22 +28,22 @@ getWishValue();
 
 let home_products = [
   {
-    image: "../products/item1.jpeg",
+    image: "./products/item1.jpeg",
     name: "Trackpant",
     price: "400",
   },
   {
-    image: "../products/s1.jpg",
+    image: "./products/s1.jpg",
     name: "Shirt",
     price: "600",
   },
   {
-    image: "../products/j1.webp",
+    image: "./products/j1.webp",
     name: "Regular Fit Jeans",
     price: "1,200",
   },
   {
-    image: "../products/sh1.jpeg",
+    image: "./products/sh1.jpeg",
     name: "Nike Zoomx Sneakers",
     price: "30,000",
   },
